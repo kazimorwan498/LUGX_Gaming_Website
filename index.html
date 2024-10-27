@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kazi Morwan" />
+        <title>LUGX</title>
+        <link
+            rel="shortcut icon"
+            href="./img/favicon-light.ico"
+            type="image/x-icon"
+            media="(prefers-color-scheme: dark)"
+        />
+        <link
+            rel="shortcut icon"
+            href="./img/favicon-dark.ico"
+            type="image/x-icon"
+            media="(prefers-color-scheme: light)"
+        />
+        <link rel="stylesheet" href="./src/output.css" />
+        <link rel="stylesheet" href="./src/input.css" />
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header
+            class="flex justify-between items-center bg-primary px-10 py-5 rounded-bottom-50px w-full fixed top-0 start-0 shadow-md z-10"
+        >
+            <img src="./src/img/logo.png" alt="logo" />
+
+            <ul class="flex items-center gap-6 text-white">
+                <li
+                    class="px-5 py-2 rounded-full tracking-wide bg-white/15 cursor-pointer"
+                >
+                    <a href="#">Home</a>
+                </li>
+                <li
+                    class="px-5 py-2 rounded-full tracking-wide transition-all duration-300 cursor-pointer hover:bg-white/15"
+                >
+                    <a href="#">Our Shop</a>
+                </li>
+                <li
+                    class="px-5 py-2 rounded-full tracking-wide transition-all duration-300 cursor-pointer hover:bg-white/15"
+                >
+                    <a href="#">Product Details</a>
+                </li>
+                <li
+                    class="px-5 py-2 rounded-full tracking-wide transition-all duration-300 cursor-pointer hover:bg-white/15"
+                >
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+
+            <button
+                class="text-white uppercase font-medium tracking-wide bg-secondary px-5 py-2 rounded-full transition-all duration-200 hover:scale-105 active:scale-95"
+            >
+                Sign in
+            </button>
+        </header>
+
+        <!-- Hero Section -->
+        <section
+            class="home flex items-center justify-center py-56 px-28 rounded-bottom-150px"
+        >
+            <div class="text-white w-3/6">
+                <span class="text-xl uppercase">Welcome to lugx</span>
+                <h1
+                    class="text-5xl font-bold mt-5 leading-snug relative heading-1"
+                >
+                    BEST GAMING SITE EVER!
+                </h1>
+                <p class="mt-10 mb-1.5">
+                    LUGX Gaming is free Tailwind CSS, HTML, CSS website template
+                    for your gaming websites. You can download and use this
+                    layout for commercial purposes. Please tell your friends
+                    about TemplateMo.
+                </p>
+                <div
+                    class="flex mt-16 md:w-full lg:w-9/12 h-12 bg-white rounded-full overflow-hidden"
+                >
+                    <input
+                        class="h-full w-8/12 px-4 text-black border-none outline-none"
+                        type="search"
+                        placeholder="Search anything..."
+                    />
+                    <button
+                        class="bg-secondary h-full w-4/12 rounded-full border-2 hover:bg-secondaryHover active:bg-secondaryActive"
+                        type="button"
+                    >
+                        Search Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-3/6 flex justify-end" style="height: 435px">
+                <div class="h-full relative" style="width: 355px">
+                    <img
+                        class="h-full rounded-3xl"
+                        src="./src/img/banner-image.jpg"
+                        alt="banner-image"
+                    />
+                    <span
+                        class="absolute top-4 right-4 text-2xl font-bold text-white bg-primary py-1 px-4 rounded-full"
+                        >$22</span
+                    >
+                    <span
+                        class="absolute -bottom-6 -left-6 text-white font-bold h-100px w-100px text-3xl flex items-center justify-center bg-secondary rounded-full"
+                    >
+                        -40%
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <script
+            src="https://kit.fontawesome.com/a94f7bd7b2.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

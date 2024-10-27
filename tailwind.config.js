@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/*"],
+    content: ["./index.html"],
     theme: {
         extend: {
             colors: {
                 primary: "rgb(0,113,248)",
                 secondary: "rgb(238,98,107)",
+                secondaryHover: "rgb(207, 79, 86)",
+                secondaryActive: "rgb(170, 65, 71)",
                 white: "rgb(255, 255, 255)",
                 black: "rgb(0, 0, 0)",
             },

@@ -32,3 +32,14 @@
 .h-100px {
     height: 100px;
 }
+
+.heading-1::after {
+    content: "";
+    position: absolute;
+    left: 36%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    background: url(./img/caption-dec.png);
+    height: 12px;
+    width: 203px;
+}
