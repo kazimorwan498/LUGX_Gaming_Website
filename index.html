@@ -7,13 +7,13 @@
         <title>LUGX</title>
         <link
             rel="shortcut icon"
-            href="./img/favicon-light.ico"
+            href="./src/img/favicon-light.ico"
             type="image/x-icon"
             media="(prefers-color-scheme: dark)"
         />
         <link
             rel="shortcut icon"
-            href="./img/favicon-dark.ico"
+            href="./src/img/favicon-dark.ico"
             type="image/x-icon"
             media="(prefers-color-scheme: light)"
         />
@@ -27,7 +27,7 @@
         >
             <img src="./src/img/logo.png" alt="logo" />
 
-            <ul class="flex items-center gap-6 text-white">
+            <ul class="hidden lg:flex items-center gap-6 text-white">
                 <li
                     class="px-5 py-2 rounded-full tracking-wide bg-white/15 cursor-pointer"
                 >
@@ -59,9 +59,9 @@
 
         <!-- Hero Section -->
         <section
-            class="home flex items-center justify-center py-56 px-28 rounded-bottom-150px"
+            class="home flex flex-col lg:flex-row gap-y-10 items-center justify-center py-56 px-28 rounded-bottom-150px"
         >
-            <div class="text-white w-3/6">
+            <div class="text-white lg:w-3/6">
                 <span class="text-xl uppercase">Welcome to lugx</span>
                 <h1
                     class="text-5xl font-bold mt-5 leading-snug relative heading-1"
@@ -83,7 +83,7 @@
                         placeholder="Search anything..."
                     />
                     <button
-                        class="bg-secondary h-full w-4/12 rounded-full border-2 hover:bg-secondaryHover active:bg-secondaryActive"
+                        class="bg-secondary h-full w-4/12 rounded-full border-2 hover:bg-secondaryHover active:bg-secondaryActive transition-all duration-200"
                         type="button"
                     >
                         Search Now
@@ -91,8 +91,24 @@
                 </div>
             </div>
 
-            <div class="w-3/6 flex justify-end" style="height: 435px">
+            <div class="w-full lg:w-3/6 flex gap-x-6 justify-center md:justify-between lg:justify-end">
                 <div class="h-full relative" style="width: 355px">
+                    <img
+                        class="h-full rounded-3xl"
+                        src="./src/img/banner-image.jpg"
+                        alt="banner-image"
+                    />
+                    <span
+                        class="absolute top-4 right-4 text-2xl font-bold text-white bg-primary py-1 px-4 rounded-full"
+                        >$22</span
+                    >
+                    <span
+                        class="absolute -bottom-6 -left-6 text-white font-bold h-100px w-100px text-3xl flex items-center justify-center bg-secondary rounded-full"
+                    >
+                        -40%
+                    </span>
+                </div>
+                <div class="hidden md:inline-block lg:hidden h-full relative" style="width: 355px">
                     <img
                         class="h-full rounded-3xl"
                         src="./src/img/banner-image.jpg"
@@ -110,6 +126,8 @@
                 </div>
             </div>
         </section>
+
+        <section></section>
 
         <script
             src="https://kit.fontawesome.com/a94f7bd7b2.js"
