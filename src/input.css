@@ -11,6 +11,15 @@
     font-family: "Poppins", sans-serif;
 }
 
+:root {
+    --primary: rgb(0, 113, 248);
+    --secondary: rgb(238, 98, 107);
+    --secondaryHover: rgb(207, 79, 86);
+    --secondaryActive: rgb(170, 65, 71);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+}
+
 .home {
     background: url(./img/banner-bg.jpg) center/cover;
 }
@@ -42,4 +51,8 @@
     background: url(./img/caption-dec.png);
     height: 12px;
     width: 203px;
+}
+
+.feature > a:hover > div {
+    background-color: var(--secondary);
 }

@@ -574,6 +574,10 @@ video {
   left: -1.5rem;
 }
 
+.-top-20 {
+  top: -5rem;
+}
+
 .right-4 {
   right: 1rem;
 }
@@ -614,6 +618,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -622,8 +630,16 @@ video {
   height: 3rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-full {
   height: 100%;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .w-4\/12 {
@@ -642,6 +658,10 @@ video {
   cursor: pointer;
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -656,6 +676,14 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-6 {
@@ -710,9 +738,18 @@ video {
   background-color: rgb(255 255 255 / 0.15);
 }
 
+.p-9 {
+  padding: 2.25rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-28 {
@@ -800,6 +837,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -830,6 +873,15 @@ video {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: rgb(0, 113, 248);
+  --secondary: rgb(238, 98, 107);
+  --secondaryHover: rgb(207, 79, 86);
+  --secondaryActive: rgb(170, 65, 71);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
 }
 
 .home {
@@ -863,6 +915,10 @@ video {
   background: url(./img/caption-dec.png);
   height: 12px;
   width: 203px;
+}
+
+.feature > a:hover > div {
+  background-color: var(--secondary);
 }
 
 .hover\:scale-105:hover {
