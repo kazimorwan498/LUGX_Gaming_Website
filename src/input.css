@@ -60,7 +60,7 @@ html {
     content: "";
     position: absolute;
     left: 36%;
-    bottom: -5px;
+    bottom: -12px;
     transform: translateX(-50%);
     background: url(./img/caption-dec.png);
     height: 12px;
