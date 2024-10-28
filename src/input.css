@@ -78,3 +78,15 @@ a:hover .creed {
 a:hover .creed-icon {
     background-color: var(--primary);
 }
+
+@media screen and (max-width: 767px) {
+    .rounded-bottom-150px {
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+    }
+
+    .rounded-top-150px {
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+    }
+}
