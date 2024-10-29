@@ -18,7 +18,6 @@
             media="(prefers-color-scheme: light)"
         />
         <link rel="stylesheet" href="./src/output.css" />
-        <link rel="stylesheet" href="./src/input.css" />
     </head>
     <body>
         <!-- Header Section -->
@@ -66,7 +65,7 @@
                     >Welcome to lugx</span
                 >
                 <h1
-                    class="text-3xl sm:text-5xl font-bold mt-3 sm:mt-5 relative heading-1"
+                    class="text-3xl sm:text-5xl font-bold mt-3 sm:mt-5 relative heading-1 leading-snug-important"
                 >
                     BEST GAMING SITE EVER!
                 </h1>
@@ -229,15 +228,13 @@
             <div
                 class="grid sm:grid-cols-2 xl:grid-cols-4 justify-items-center items-center gap-6"
             >
-                <a class="relative rounded-3xl bg-black/10 w-full" href="#">
+                <a class="relative rounded-3xl bg-lightGray w-full" href="#">
                     <img
                         class="rounded-3xl w-full"
                         src="./src/img/trending-01.jpg"
                         alt="trending-game"
                     />
-                    <div
-                        class="flex items-center justify-between py-6 px-5 w-full"
-                    >
+                    <div class="flex items-center justify-between p-6 w-full">
                         <div>
                             <span class="text-sm text-black/60">Action</span>
                             <h4
@@ -256,20 +253,18 @@
                     <div
                         class="absolute top-5 right-5 text-white bg-primary flex flex-col justify-center items-center px-3.5 py-2 text-lg font-bold rounded-md"
                     >
-                        <del class="text-sm font-light">$28</del>
+                        <del class="text-sm font-normal">$28</del>
                         <span>$20</span>
                     </div>
                 </a>
 
-                <a class="relative rounded-3xl bg-black/10 w-full" href="#">
+                <a class="relative rounded-3xl bg-lightGray w-full" href="#">
                     <img
                         class="rounded-3xl w-full"
                         src="./src/img/trending-02.jpg"
                         alt="trending-game"
                     />
-                    <div
-                        class="flex items-center justify-between py-6 px-5 w-full"
-                    >
+                    <div class="flex items-center justify-between p-6 w-full">
                         <div>
                             <span class="text-sm text-black/60">Action</span>
                             <h4
@@ -292,15 +287,13 @@
                     </div>
                 </a>
 
-                <a class="relative rounded-3xl bg-black/10 w-full" href="#">
+                <a class="relative rounded-3xl bg-lightGray w-full" href="#">
                     <img
                         class="rounded-3xl w-full"
                         src="./src/img/trending-03.jpg"
                         alt="trending-game"
                     />
-                    <div
-                        class="flex items-center justify-between py-6 px-5 w-full"
-                    >
+                    <div class="flex items-center justify-between p-6 w-full">
                         <div>
                             <span class="text-sm text-black/60">Action</span>
                             <h4
@@ -319,20 +312,18 @@
                     <div
                         class="absolute top-5 right-5 text-white bg-primary flex flex-col justify-center items-center px-3.5 py-2 text-lg font-bold rounded-md"
                     >
-                        <del class="text-sm font-light">$64</del>
+                        <del class="text-sm font-normal">$64</del>
                         <span>$44</span>
                     </div>
                 </a>
 
-                <a class="relative rounded-3xl bg-black/10 w-full" href="#">
+                <a class="relative rounded-3xl bg-lightGray w-full" href="#">
                     <img
                         class="rounded-3xl w-full"
                         src="./src/img/trending-04.jpg"
                         alt="trending-game"
                     />
-                    <div
-                        class="flex items-center justify-between py-6 px-5 w-full"
-                    >
+                    <div class="flex items-center justify-between p-6 w-full">
                         <div>
                             <span class="text-sm text-black/60">Action</span>
                             <h4
@@ -359,7 +350,7 @@
 
         <!-- Top Games Section -->
         <section
-            class="flex flex-col px-10 sm:px-20 pt-12 sm:pt-24 pb-20 sm:pb-32 mt-0 mb-7 sm:my-14 mx-auto bg-black/10 rounded-top-150px rounded-bottom-150px"
+            class="flex flex-col px-10 sm:px-20 pt-12 sm:pt-24 pb-20 sm:pb-32 mt-0 mb-7 sm:my-14 mx-auto bg-lightGray rounded-top-150px rounded-bottom-150px"
         >
             <span
                 class="text-base sm:text-lg uppercase font-bold text-secondary mb-3"
@@ -638,12 +629,18 @@
             </div>
         </section>
 
-        <!-- Shop & Newsletter -->
+        <!-- Shop & Newsletter Section -->
         <section
-            class="flex flex-col xl:flex-row items-center gap-10 xl:items-end justify-between px-10 sm:px-20 py-20 mb-0 sm:mb-10 mx-auto relative"
+            class="flex flex-col lg:flex-row items-center gap-10 xl:items-end justify-between px-10 sm:px-20 pt-0 sm:pt-20 pb-20 mb-0 sm:mb-20 mx-auto relative"
         >
+            <img
+                class="hidden lg:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] -z-10 h-full rounded-3xl"
+                src="./src/img/cta-bg.jpg"
+                alt="cta-bg"
+            />
+
             <div
-                class="flex flex-col items-start justify-center lg:w-3/5 xl:w-6/12 h-96 bg-black/10 rounded-3xl p-14"
+                class="flex flex-col items-start justify-center lg:w-4/5 xl:w-5/12 bg-lightGray rounded-3xl p-14 lg:p-10 xl:p-14"
             >
                 <span
                     class="text-base sm:text-lg uppercase font-bold text-secondary"
@@ -651,12 +648,14 @@
                     Our Shop
                 </span>
 
-                <h2 class="text-black text-xl sm:text-4xl font-bold my-5">
+                <h2
+                    class="text-black text-xl sm:text-4xl font-bold my-5 leading-snug-important"
+                >
                     Go Pre-Order Buy & Get Best
                     <span class="text-primary">Prices</span> For You!
                 </h2>
 
-                <p class="text-black mb-5">
+                <p class="text-black text-sm sm:text-base mb-10">
                     Lorem ipsum dolor consectetur adipiscing, sed do eiusmod
                     tempor incididunt.
                 </p>
@@ -670,7 +669,7 @@
             </div>
 
             <div
-                class="flex flex-col items-start justify-center lg:w-3/5 xl:w-6/12 h-96 bg-black/10 rounded-3xl p-14"
+                class="flex flex-col items-start justify-center lg:w-4/5 xl:w-5/12 bg-lightGray rounded-3xl p-14 lg:p-10 xl:p-14"
             >
                 <span
                     class="text-base sm:text-lg uppercase font-bold text-secondary"
@@ -678,26 +677,30 @@
                     NEWSLETTER
                 </span>
 
-                <h2 class="text-black text-xl sm:text-4xl font-bold mt-5">
+                <h2
+                    class="text-black text-xl sm:text-4xl font-bold mt-5 leading-snug-important"
+                >
                     Get Up To $100 Off Just Buy
                     <span class="text-primary">Subscribe</span> Newsletter!
                 </h2>
 
-                <div
+                <form
+                    action="#"
                     class="flex flex-col sm:flex-row gap-y-5 mt-8 sm:mt-16 w-full h-28 sm:h-12 bg-transparent sm:bg-white sm:rounded-full overflow-hidden"
                 >
                     <input
-                        class="h-full sm:w-7/12 text-sm sm:text-base px-4 bg-white sm:bg-transparent text-black rounded-full border-none outline-none"
-                        type="search"
+                        class="h-full w-full sm:w-7/12 text-sm sm:text-base px-4 bg-white sm:bg-transparent text-black rounded-full border-none outline-none"
+                        type="email"
                         placeholder="Your Email"
+                        required
                     />
                     <button
-                        class="bg-secondary h-full sm:w-5/12 text-sm sm:text-base text-white rounded-full border-2 border-white hover:bg-primary active:scale-95 transition-all duration-300 text-nowrap"
-                        type="button"
+                        class="bg-secondary h-full w-full sm:w-5/12 text-sm sm:text-base text-white rounded-full border-2 border-white hover:bg-primary active:scale-95 transition-all duration-300 text-nowrap"
+                        type="submit"
                     >
                         Subscribe Now
                     </button>
-                </div>
+                </form>
             </div>
         </section>
 

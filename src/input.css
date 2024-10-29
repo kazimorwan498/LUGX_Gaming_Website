@@ -79,6 +79,10 @@ a:hover .creed-icon {
     background-color: var(--primary);
 }
 
+.leading-snug-important {
+    line-height: 1.375 !important;
+}
+
 @media screen and (max-width: 767px) {
     .rounded-bottom-150px {
         border-bottom-left-radius: 70px;
