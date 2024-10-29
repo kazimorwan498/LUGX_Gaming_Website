@@ -59,7 +59,7 @@
 
         <!-- Hero Section -->
         <section
-            class="home flex flex-col lg:flex-row gap-y-10 items-center justify-center py-56 px-10 sm:px-20 rounded-bottom-150px"
+            class="home flex flex-col lg:flex-row gap-y-10 items-center justify-center pt-32 sm:pt-56 pb-56 px-10 sm:px-20 rounded-bottom-150px"
         >
             <div class="text-white lg:w-3/6">
                 <span class="text-sm sm:text-xl uppercase"
@@ -80,12 +80,12 @@
                     class="flex mt-8 sm:mt-16 md:w-full lg:w-9/12 h-12 bg-white rounded-full overflow-hidden"
                 >
                     <input
-                        class="h-full w-8/12 px-4 text-black border-none outline-none"
+                        class="h-full w-7/12 sm:w-8/12 text-sm sm:text-base px-4 text-black border-none outline-none"
                         type="search"
                         placeholder="Search anything..."
                     />
                     <button
-                        class="bg-secondary h-full w-4/12 rounded-full border-2 hover:bg-primary active:scale-95 transition-all duration-300"
+                        class="bg-secondary h-full w-5/12 sm:w-4/12 text-sm sm:text-base rounded-full border-2 hover:bg-primary active:scale-95 transition-all duration-300 text-nowrap"
                         type="button"
                     >
                         Search Now
@@ -208,17 +208,18 @@
         <section
             class="flex flex-col px-10 sm:px-20 py-20 mt-10 mb-0 sm:mb-10 mx-auto"
         >
-            <span class="text-lg uppercase font-bold text-secondary mb-3"
+            <span
+                class="text-base sm:text-lg uppercase font-bold text-secondary mb-3"
                 >Trending</span
             >
             <div
                 class="flex items-center justify-between w-full mb-10 sm:mb-20"
             >
-                <h2 class="text-2xl sm:text-4xl font-bold leading-snug mt-0">
+                <h2 class="text-xl sm:text-4xl font-bold leading-snug mt-0">
                     Trending Games
                 </h2>
                 <button
-                    class="text-white text-sm sm:text-base uppercase font-medium tracking-wide bg-secondary hover:bg-primary px-5 py-2 rounded-full border-2 border-secondary transition-all duration-200 hover:border-primary active:scale-95"
+                    class="text-white text-sm sm:text-base uppercase font-medium tracking-wide bg-secondary hover:bg-primary px-5 py-2 rounded-full border-2 border-secondary transition-all duration-200 hover:border-primary active:scale-95 text-nowrap"
                     type="button"
                 >
                     View All
@@ -360,17 +361,18 @@
         <section
             class="flex flex-col px-10 sm:px-20 pt-12 sm:pt-24 pb-20 sm:pb-32 mt-0 mb-7 sm:my-14 mx-auto bg-black/10 rounded-top-150px rounded-bottom-150px"
         >
-            <span class="text-lg uppercase font-bold text-secondary mb-3"
+            <span
+                class="text-base sm:text-lg uppercase font-bold text-secondary mb-3"
                 >TOP GAMES</span
             >
             <div
                 class="flex items-center justify-between w-full mb-10 sm:mb-20"
             >
-                <h2 class="text-2xl sm:text-4xl font-bold leading-snug mt-0">
+                <h2 class="text-xl sm:text-4xl font-bold leading-snug mt-0">
                     Most Played
                 </h2>
                 <button
-                    class="text-white text-sm sm:text-base uppercase font-medium tracking-wide bg-secondary hover:bg-primary px-5 py-2 rounded-full border-2 border-secondary transition-all duration-200 hover:border-primary active:scale-95"
+                    class="text-white text-sm sm:text-base uppercase font-medium tracking-wide bg-secondary hover:bg-primary px-5 py-2 rounded-full border-2 border-secondary transition-all duration-200 hover:border-primary active:scale-95 text-nowrap"
                     type="button"
                 >
                     View All
@@ -540,51 +542,95 @@
 
         <!-- Categories Section -->
         <section
-            class="flex flex-col items-center justify-center px-10 sm:px-20 py-20 mt-10 mb-0 sm:mb-10 mx-auto"
+            class="flex flex-col items-center justify-center px-10 sm:px-20 py-20 mb-0 sm:mb-10 mx-auto"
         >
-            <span class="text-lg uppercase font-bold text-secondary mb-3">
+            <span
+                class="text-base sm:text-lg uppercase font-bold text-secondary mb-3"
+            >
                 Categories
             </span>
-            <h2 class="text-2xl sm:text-4xl font-bold leading-snug mt-0">
+            <h2 class="text-xl sm:text-4xl font-bold leading-snug mt-0">
                 Top Categories
             </h2>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 w-full mt-16">
-                <a class="flex flex-col items-center justify-center w-full bg-primary rounded-3xl overflow-hidden" href="#">
-                    <span class="text-white font-bold text-lg py-4 w-full text-center">Action</span>
-                    <img class="rounded-3xl w-full"
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 w-full mt-16"
+            >
+                <a
+                    class="flex flex-col items-center justify-center w-full bg-primary rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300"
+                    href="#"
+                >
+                    <span
+                        class="text-white font-bold text-base sm:text-lg py-4 w-full text-center"
+                    >
+                        Action
+                    </span>
+                    <img
+                        class="rounded-3xl w-full"
                         src="./src/img/categories-01.jpg"
                         alt="categories-game"
                     />
                 </a>
-                
-                <a class="flex flex-col items-center justify-center w-full bg-primary rounded-3xl overflow-hidden" href="#">
-                    <span class="text-white font-bold text-lg py-4 w-full text-center">Action</span>
-                    <img class="rounded-3xl w-full"
+
+                <a
+                    class="flex flex-col items-center justify-center w-full bg-primary rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300"
+                    href="#"
+                >
+                    <span
+                        class="text-white font-bold text-base sm:text-lg py-4 w-full text-center"
+                    >
+                        Action
+                    </span>
+                    <img
+                        class="rounded-3xl w-full"
                         src="./src/img/categories-02.jpg"
                         alt="categories-game"
                     />
                 </a>
 
-                <a class="flex flex-col items-center justify-center w-full bg-primary rounded-3xl overflow-hidden" href="#">
-                    <span class="text-white font-bold text-lg py-4 w-full text-center">Action</span>
-                    <img class="rounded-3xl w-full"
+                <a
+                    class="flex flex-col items-center justify-center w-full bg-primary rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300"
+                    href="#"
+                >
+                    <span
+                        class="text-white font-bold text-base sm:text-lg py-4 w-full text-center"
+                    >
+                        Action
+                    </span>
+                    <img
+                        class="rounded-3xl w-full"
                         src="./src/img/categories-03.jpg"
                         alt="categories-game"
                     />
                 </a>
 
-                <a class="flex flex-col items-center justify-center w-full bg-primary rounded-3xl overflow-hidden" href="#">
-                    <span class="text-white font-bold text-lg py-4 w-full text-center">Action</span>
-                    <img class="rounded-3xl w-full"
+                <a
+                    class="flex flex-col items-center justify-center w-full bg-primary rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300"
+                    href="#"
+                >
+                    <span
+                        class="text-white font-bold text-base sm:text-lg py-4 w-full text-center"
+                    >
+                        Action
+                    </span>
+                    <img
+                        class="rounded-3xl w-full"
                         src="./src/img/categories-04.jpg"
                         alt="categories-game"
                     />
                 </a>
 
-                <a class="flex flex-col items-center justify-center w-full bg-primary rounded-3xl overflow-hidden" href="#">
-                    <span class="text-white font-bold text-lg py-4 w-full text-center">Action</span>
-                    <img class="rounded-3xl w-full"
+                <a
+                    class="flex flex-col items-center justify-center w-full bg-primary rounded-3xl overflow-hidden hover:scale-105 transition-all duration-300"
+                    href="#"
+                >
+                    <span
+                        class="text-white font-bold text-base sm:text-lg py-4 w-full text-center"
+                    >
+                        Action
+                    </span>
+                    <img
+                        class="rounded-3xl w-full"
                         src="./src/img/categories-02.jpg"
                         alt="categories-game"
                     />

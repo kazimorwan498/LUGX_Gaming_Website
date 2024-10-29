@@ -657,6 +657,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -667,18 +671,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
-}
-
-.mt-12{
-  margin-top: 3rem;
-}
-
-.mt-16{
-  margin-top: 4rem;
 }
 
 .flex{
@@ -709,12 +701,12 @@ video {
   width: 2.5rem;
 }
 
-.w-4\/12{
-  width: 33.333333%;
+.w-5\/12{
+  width: 41.666667%;
 }
 
-.w-8\/12{
-  width: 66.666667%;
+.w-7\/12{
+  width: 58.333333%;
 }
 
 .w-full{
@@ -728,10 +720,6 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
-}
-
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-cols-1{
@@ -766,10 +754,6 @@ video {
   gap: 1.5rem;
 }
 
-.gap-8{
-  gap: 2rem;
-}
-
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
@@ -785,6 +769,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.text-nowrap{
+  text-wrap: nowrap;
 }
 
 .rounded-3xl{
@@ -884,11 +872,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-56{
-  padding-top: 14rem;
-  padding-bottom: 14rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -902,8 +885,16 @@ video {
   padding-bottom: 5rem;
 }
 
+.pb-56{
+  padding-bottom: 14rem;
+}
+
 .pt-12{
   padding-top: 3rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
 }
 
 .text-center{
@@ -933,6 +924,11 @@ video {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -1096,6 +1092,12 @@ a:hover .creed-icon {
   }
 }
 
+.hover\:scale-105:hover{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:border-primary:hover{
   --tw-border-opacity: 1;
   border-color: rgb(0 113 248 / var(--tw-border-opacity));
@@ -1155,12 +1157,16 @@ a:hover .creed-icon {
     height: 3.5rem;
   }
 
-  .sm\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .sm\:w-4\/12{
+    width: 33.333333%;
   }
 
-  .sm\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .sm\:w-8\/12{
+    width: 66.666667%;
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:px-20{
@@ -1176,6 +1182,10 @@ a:hover .creed-icon {
     padding-top: 6rem;
   }
 
+  .sm\:pt-56{
+    padding-top: 14rem;
+  }
+
   .sm\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1189,6 +1199,11 @@ a:hover .creed-icon {
   .sm\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-xl{
