@@ -909,6 +909,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -985,6 +990,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold{
@@ -1078,15 +1088,6 @@ video {
   --black: rgb(0, 0, 0);
 }
 
-/* ::-webkit-scrollbar {
-    display: none;
-}
-
-html {
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-} */
-
 .home {
   background: url(./img/banner-bg.jpg) center/cover;
 }
@@ -1141,6 +1142,10 @@ a:hover .creed-icon {
   line-height: 1.375 !important;
 }
 
+footer {
+  background: url(./img/footer-bg.jpg) center/cover;
+}
+
 @media screen and (max-width: 767px) {
   .rounded-bottom-150px {
     border-bottom-left-radius: 70px;
@@ -1150,6 +1155,18 @@ a:hover .creed-icon {
   .rounded-top-150px {
     border-top-left-radius: 70px;
     border-top-right-radius: 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .rounded-bottom-150px {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .rounded-top-150px {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
 }
 
@@ -1258,6 +1275,11 @@ a:hover .creed-icon {
   .sm\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .sm\:py-14{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
   .sm\:pb-32{

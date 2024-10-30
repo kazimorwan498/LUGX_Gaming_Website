@@ -20,15 +20,6 @@
     --black: rgb(0, 0, 0);
 }
 
-/* ::-webkit-scrollbar {
-    display: none;
-}
-
-html {
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-} */
-
 .home {
     background: url(./img/banner-bg.jpg) center/cover;
 }
@@ -83,6 +74,10 @@ a:hover .creed-icon {
     line-height: 1.375 !important;
 }
 
+footer {
+    background: url(./img/footer-bg.jpg) center/cover;
+}
+
 @media screen and (max-width: 767px) {
     .rounded-bottom-150px {
         border-bottom-left-radius: 70px;
@@ -92,5 +87,17 @@ a:hover .creed-icon {
     .rounded-top-150px {
         border-top-left-radius: 70px;
         border-top-right-radius: 70px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .rounded-bottom-150px {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    .rounded-top-150px {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
     }
 }
