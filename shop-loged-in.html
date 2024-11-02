@@ -49,12 +49,37 @@
                 </li>
             </ul>
 
-            <button
-                class="text-white text-sm sm:text-base uppercase font-medium tracking-wide bg-secondary hover:bg-primary px-5 py-2 rounded-full border-2 border-secondary transition-all duration-200 hover:border-white active:scale-95"
-                onclick="window.location.href = './login.html'"
-            >
-                Sign in
-            </button>
+            <div class="relative">
+                <button
+                    class="text-white text-2xl uppercase font-medium tracking-wide bg-primary hover:bg-secondary h-14 w-14 rounded-full border-2 border-white transition-all duration-200 hover:border-white active:scale-95 pBtn"
+                >
+                    <i class="fa-regular fa-user"></i>
+                </button>
+
+                <nav
+                    class="absolute top-[72px] right-5 hidden w-56 bg-white shadow-lg py-5 rounded-lg pNav"
+                >
+                    <ul>
+                        <li
+                            class="hover:bg-secondary hover:text-white cursor-pointer"
+                        >
+                            <a class="block py-2 px-7" href="#">Your Profile</a>
+                        </li>
+                        <li
+                            class="hover:bg-secondary hover:text-white cursor-pointer"
+                        >
+                            <a class="block py-2 px-7" href="#">Settings</a>
+                        </li>
+                        <li
+                            class="hover:bg-secondary hover:text-white cursor-pointer"
+                        >
+                            <a class="block py-2 px-7" href="./login.html"
+                                >Sign out</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <!-- Shop Section -->

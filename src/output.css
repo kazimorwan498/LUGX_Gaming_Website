@@ -746,6 +746,10 @@ video {
   height: 100vh;
 }
 
+.h-1{
+  height: 0.25rem;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -888,6 +892,10 @@ video {
 
 .border-2{
   border-width: 2px;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .border-none{
@@ -1298,6 +1306,11 @@ footer {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-primary:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 113 248 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover{
   text-decoration-line: underline;
 }
@@ -1368,6 +1381,10 @@ footer {
 
   .sm\:w-8\/12{
     width: 66.666667%;
+  }
+
+  .sm\:w-12{
+    width: 3rem;
   }
 
   .sm\:grid-cols-2{
@@ -1444,12 +1461,20 @@ footer {
     display: inline-block;
   }
 
+  .md\:h-12{
+    height: 3rem;
+  }
+
   .md\:w-3\/6{
     width: 50%;
   }
 
   .md\:w-full{
     width: 100%;
+  }
+
+  .md\:w-12{
+    width: 3rem;
   }
 
   .md\:grid-cols-3{
