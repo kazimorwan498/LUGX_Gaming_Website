@@ -20,6 +20,10 @@
     --black: rgb(0, 0, 0);
 }
 
+::-webkit-inner-spin-button {
+    display: none;
+}
+
 .home {
     background: url(./img/banner-bg.jpg) center/cover;
 }

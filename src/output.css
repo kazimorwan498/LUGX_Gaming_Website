@@ -690,6 +690,10 @@ video {
   margin-bottom: 2.25rem;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
 .mt-0{
   margin-top: 0px;
 }
@@ -712,6 +716,14 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
 }
 
 .block{
@@ -738,6 +750,10 @@ video {
   height: 3rem;
 }
 
+.h-14{
+  height: 3.5rem;
+}
+
 .h-28{
   height: 7rem;
 }
@@ -756,6 +772,10 @@ video {
 
 .w-12{
   width: 3rem;
+}
+
+.w-24{
+  width: 6rem;
 }
 
 .w-5\/12{
@@ -849,6 +869,14 @@ video {
   gap: 1.5rem;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
+.gap-14{
+  gap: 3.5rem;
+}
+
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
@@ -896,6 +924,11 @@ video {
 
 .border-none{
   border-style: none;
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(30 30 30 / var(--tw-border-opacity));
 }
 
 .border-lightGray{
@@ -1105,8 +1138,16 @@ video {
   color: rgb(30 30 30 / var(--tw-text-opacity));
 }
 
+.text-black\/30{
+  color: rgb(30 30 30 / 0.3);
+}
+
 .text-black\/60{
   color: rgb(30 30 30 / 0.6);
+}
+
+.text-black\/70{
+  color: rgb(30 30 30 / 0.7);
 }
 
 .text-primary{
@@ -1122,6 +1163,18 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black\/40{
+  color: rgb(30 30 30 / 0.4);
+}
+
+.text-black\/50{
+  color: rgb(30 30 30 / 0.5);
+}
+
+.caret-primary{
+  caret-color: rgb(0,113,248);
 }
 
 .shadow-lg{
@@ -1169,6 +1222,10 @@ video {
   --secondaryActive: rgb(170, 65, 71);
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
+}
+
+::-webkit-inner-spin-button {
+  display: none;
 }
 
 .home {
@@ -1309,6 +1366,16 @@ footer {
 
 .hover\:underline:hover{
   text-decoration-line: underline;
+}
+
+.focus\:border-primary:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 113 248 / var(--tw-border-opacity));
+}
+
+.focus\:text-primary:focus{
+  --tw-text-opacity: 1;
+  color: rgb(0 113 248 / var(--tw-text-opacity));
 }
 
 .focus\:outline-2:focus{
@@ -1461,6 +1528,10 @@ footer {
     display: inline-block;
   }
 
+  .md\:w-2\/4{
+    width: 50%;
+  }
+
   .md\:w-3\/6{
     width: 50%;
   }
@@ -1475,6 +1546,10 @@ footer {
 
   .md\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 
   .md\:justify-between{
