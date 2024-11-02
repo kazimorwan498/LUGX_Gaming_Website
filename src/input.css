@@ -24,6 +24,10 @@
     background: url(./img/banner-bg.jpg) center/cover;
 }
 
+.page-heading-bg {
+    background: url(./img/page-heading-bg.jpg) center/cover;
+}
+
 .rounded-bottom-50px {
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
