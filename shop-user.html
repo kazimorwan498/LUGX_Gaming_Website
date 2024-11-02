@@ -57,7 +57,7 @@
                 </button>
 
                 <nav
-                    class="absolute top-[72px] right-5 hidden w-56 bg-white shadow-lg py-5 rounded-lg pNav"
+                    class="absolute top-[60px] right-0 hidden w-56 bg-white shadow-lg py-5 rounded-lg pNav"
                 >
                     <ul>
                         <li
@@ -91,7 +91,7 @@
             </h2>
 
             <div class="text-white">
-                <a href="./index.html">Home</a>
+                <a href="./user.html">Home</a>
                 <span> > Our Shop</span>
             </div>
         </section>
@@ -110,18 +110,19 @@
                 </button>
                 <button
                     class="text-black hover:text-secondary text-sm sm:text-base uppercase font-medium tracking-wide bg-lightGray px-5 py-2 rounded-full border-2 border-lightGray hover:border-secondary transition-all duration-200 active:scale-95"
+                    onclick="window.location.href = './shop-adventure-user.html'"
                 >
                     Adventure
                 </button>
                 <button
                     class="text-black hover:text-secondary text-sm sm:text-base uppercase font-medium tracking-wide bg-lightGray px-5 py-2 rounded-full border-2 border-lightGray hover:border-secondary transition-all duration-200 active:scale-95"
-                    onclick="window.location.href = './shop-strategy.html'"
+                    onclick="window.location.href = './shop-strategy-user.html'"
                 >
                     Strategy
                 </button>
                 <button
                     class="text-black hover:text-secondary text-sm sm:text-base uppercase font-medium tracking-wide bg-lightGray px-5 py-2 rounded-full border-2 border-lightGray hover:border-secondary transition-all duration-200 active:scale-95"
-                    onclick="window.location.href = './shop-racing.html'"
+                    onclick="window.location.href = './shop-racing-user.html'"
                 >
                     Racing
                 </button>
@@ -530,5 +531,14 @@
             src="https://kit.fontawesome.com/a94f7bd7b2.js"
             crossorigin="anonymous"
         ></script>
+
+        <script>
+            const pBtn = document.querySelector(".pBtn"),
+                pNav = document.querySelector(".pNav");
+
+            pBtn.addEventListener("click", () => {
+                pNav.classList.toggle("hidden");
+            });
+        </script>
     </body>
 </html>
