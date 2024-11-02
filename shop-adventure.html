@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kazi Morwan" />
+        <title>LUGX - Gaming</title>
+        <link
+            rel="shortcut icon"
+            href="./src/img/favicon-light.ico"
+            type="image/x-icon"
+            media="(prefers-color-scheme: dark)"
+        />
+        <link
+            rel="shortcut icon"
+            href="./src/img/favicon-dark.ico"
+            type="image/x-icon"
+            media="(prefers-color-scheme: light)"
+        />
+        <link rel="stylesheet" href="./src/output.css" />
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header
+            class="flex justify-between items-center bg-primary px-10 py-5 rounded-bottom-50px w-full fixed top-0 start-0 shadow-lg z-10"
+        >
+            <img class="h-12 sm:h-14" src="./src/img/logo.png" alt="logo" />
+
+            <ul class="hidden lg:flex items-center gap-6 text-white">
+                <li
+                    class="rounded-full tracking-wide transition-all duration-300 cursor-pointer hover:bg-white/15"
+                >
+                    <a class="block px-5 py-2" href="./index.html">Home</a>
+                </li>
+                <li
+                    class="rounded-full tracking-wide bg-white/15 cursor-pointer"
+                >
+                    <a class="block px-5 py-2" href="./shop.html">Our Shop</a>
+                </li>
+                <li
+                    class="rounded-full tracking-wide transition-all duration-300 cursor-pointer hover:bg-white/15"
+                >
+                    <a class="block px-5 py-2" href="#">Product Details</a>
+                </li>
+                <li
+                    class="rounded-full tracking-wide transition-all duration-300 cursor-pointer hover:bg-white/15"
+                >
+                    <a class="block px-5 py-2" href="#">Contact Us</a>
+                </li>
+            </ul>
+
+            <button
+                class="text-white text-sm sm:text-base uppercase font-medium tracking-wide bg-secondary hover:bg-primary px-5 py-2 rounded-full border-2 border-secondary transition-all duration-200 hover:border-white active:scale-95"
+                onclick="window.location.href = './login.html'"
+            >
+                Sign in
+            </button>
+        </header>
+
+        <!-- Shop Section -->
+        <section
+            class="page-heading-bg flex flex-col gap-6 items-center justify-center pt-32 sm:pt-56 pb-32 px-10 sm:px-20 rounded-bottom-150px"
+        >
+            <h2 class="text-3xl sm:text-5xl font-bold text-white uppercase">
+                Our Shop
+            </h2>
+
+            <div class="text-white">
+                <a href="./index.html">Home</a>
+                <span> > Our Shop</span>
+            </div>
+        </section>
+
+        <!-- Items Section -->
+        <section
+            class="flex flex-col gap-20 items-center justify-center px-10 sm:px-20 py-20 mt-10 mb-0 sm:mb-10 mx-auto"
+        >
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 gap-5 justify-center items-center"
+            >
+                <button
+                    class="text-black hover:text-secondary text-sm sm:text-base uppercase font-medium tracking-wide bg-lightGray px-5 py-2 rounded-full border-2 border-lightGray hover:border-secondary transition-all duration-200 active:scale-95"
+                    onclick="window.location.href = './shop.html'"
+                >
+                    Show all
+                </button>
+                <button
+                    class="text-white text-sm sm:text-base uppercase font-medium tracking-wide bg-secondary px-5 py-2 rounded-full border-2 border-secondary"
+                >
+                    Adventure
+                </button>
+                <button
+                    class="text-black hover:text-secondary text-sm sm:text-base uppercase font-medium tracking-wide bg-lightGray px-5 py-2 rounded-full border-2 border-lightGray hover:border-secondary transition-all duration-200 active:scale-95"
+                    onclick="window.location.href = './shop-strategy.html'"
+                >
+                    Strategy
+                </button>
+                <button
+                    class="text-black hover:text-secondary text-sm sm:text-base uppercase font-medium tracking-wide bg-lightGray px-5 py-2 rounded-full border-2 border-lightGray hover:border-secondary transition-all duration-200 active:scale-95"
+                    onclick="window.location.href = './shop-racing.html'"
+                >
+                    Racing
+                </button>
+            </div>
+
+            <div
+                class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 justify-items-center items-center gap-6 w-full"
+            >
+                <a class="relative rounded-3xl bg-lightGray w-full" href="#">
+                    <img
+                        class="rounded-3xl w-full"
+                        src="./src/img/trending-01.jpg"
+                        alt="trending-game"
+                    />
+                    <div class="flex items-center justify-between p-6 w-full">
+                        <div>
+                            <span class="text-sm text-black/60">Action</span>
+                            <h4
+                                class="text-black text-base font-bold creed transition-all duration-300"
+                            >
+                                Assassin Creed
+                            </h4>
+                        </div>
+                        <div
+                            class="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full creed-icon transition-all duration-300"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute top-5 right-5 text-white bg-primary flex flex-col justify-center items-center px-3.5 py-2 text-lg font-bold rounded-md"
+                    >
+                        <del class="text-sm font-normal">$28</del>
+                        <span>$20</span>
+                    </div>
+                </a>
+
+                <a class="relative rounded-3xl bg-lightGray w-full" href="#">
+                    <img
+                        class="rounded-3xl w-full"
+                        src="./src/img/trending-02.jpg"
+                        alt="trending-game"
+                    />
+                    <div class="flex items-center justify-between p-6 w-full">
+                        <div>
+                            <span class="text-sm text-black/60">Action</span>
+                            <h4
+                                class="text-black text-base font-bold creed transition-all duration-300"
+                            >
+                                Assassin Creed
+                            </h4>
+                        </div>
+                        <div
+                            class="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full creed-icon transition-all duration-300"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute top-5 right-5 text-white bg-primary flex flex-col justify-center items-center px-3.5 py-2 text-lg font-bold rounded-md"
+                    >
+                        <span>$44</span>
+                    </div>
+                </a>
+
+                <a class="relative rounded-3xl bg-lightGray w-full" href="#">
+                    <img
+                        class="rounded-3xl w-full"
+                        src="./src/img/trending-03.jpg"
+                        alt="trending-game"
+                    />
+                    <div class="flex items-center justify-between p-6 w-full">
+                        <div>
+                            <span class="text-sm text-black/60">Action</span>
+                            <h4
+                                class="text-black text-base font-bold creed transition-all duration-300"
+                            >
+                                Assassin Creed
+                            </h4>
+                        </div>
+                        <div
+                            class="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full creed-icon transition-all duration-300"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute top-5 right-5 text-white bg-primary flex flex-col justify-center items-center px-3.5 py-2 text-lg font-bold rounded-md"
+                    >
+                        <del class="text-sm font-normal">$64</del>
+                        <span>$44</span>
+                    </div>
+                </a>
+
+                <a class="relative rounded-3xl bg-lightGray w-full" href="#">
+                    <img
+                        class="rounded-3xl w-full"
+                        src="./src/img/trending-04.jpg"
+                        alt="trending-game"
+                    />
+                    <div class="flex items-center justify-between p-6 w-full">
+                        <div>
+                            <span class="text-sm text-black/60">Action</span>
+                            <h4
+                                class="text-black text-base font-bold creed transition-all duration-300"
+                            >
+                                Assassin Creed
+                            </h4>
+                        </div>
+                        <div
+                            class="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full creed-icon transition-all duration-300"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute top-5 right-5 text-white bg-primary flex flex-col justify-center items-center px-3.5 py-2 text-lg font-bold rounded-md"
+                    >
+                        <span>$32</span>
+                    </div>
+                </a>
+
+                <a class="relative rounded-3xl bg-lightGray w-full" href="#">
+                    <img
+                        class="rounded-3xl w-full"
+                        src="./src/img/trending-01.jpg"
+                        alt="trending-game"
+                    />
+                    <div class="flex items-center justify-between p-6 w-full">
+                        <div>
+                            <span class="text-sm text-black/60">Action</span>
+                            <h4
+                                class="text-black text-base font-bold creed transition-all duration-300"
+                            >
+                                Assassin Creed
+                            </h4>
+                        </div>
+                        <div
+                            class="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full creed-icon transition-all duration-300"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute top-5 right-5 text-white bg-primary flex flex-col justify-center items-center px-3.5 py-2 text-lg font-bold rounded-md"
+                    >
+                        <del class="text-sm font-normal">$28</del>
+                        <span>$20</span>
+                    </div>
+                </a>
+
+                <a class="relative rounded-3xl bg-lightGray w-full" href="#">
+                    <img
+                        class="rounded-3xl w-full"
+                        src="./src/img/trending-02.jpg"
+                        alt="trending-game"
+                    />
+                    <div class="flex items-center justify-between p-6 w-full">
+                        <div>
+                            <span class="text-sm text-black/60">Action</span>
+                            <h4
+                                class="text-black text-base font-bold creed transition-all duration-300"
+                            >
+                                Assassin Creed
+                            </h4>
+                        </div>
+                        <div
+                            class="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full creed-icon transition-all duration-300"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute top-5 right-5 text-white bg-primary flex flex-col justify-center items-center px-3.5 py-2 text-lg font-bold rounded-md"
+                    >
+                        <span>$44</span>
+                    </div>
+                </a>
+
+                <a class="relative rounded-3xl bg-lightGray w-full" href="#">
+                    <img
+                        class="rounded-3xl w-full"
+                        src="./src/img/trending-03.jpg"
+                        alt="trending-game"
+                    />
+                    <div class="flex items-center justify-between p-6 w-full">
+                        <div>
+                            <span class="text-sm text-black/60">Action</span>
+                            <h4
+                                class="text-black text-base font-bold creed transition-all duration-300"
+                            >
+                                Assassin Creed
+                            </h4>
+                        </div>
+                        <div
+                            class="w-10 h-10 bg-secondary text-white flex items-center justify-center rounded-full creed-icon transition-all duration-300"
+                        >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute top-5 right-5 text-white bg-primary flex flex-col justify-center items-center px-3.5 py-2 text-lg font-bold rounded-md"
+                    >
+                        <del class="text-sm font-normal">$64</del>
+                        <span>$44</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer
+            class="w-full py-10 sm:py-14 px-5 text-xs sm:text-base text-center text-white rounded-top-150px"
+        >
+            <span>
+                Copyright © 2024 LUGX Gaming Company. All rights reserved.
+                &nbsp;
+            </span>
+            <a href="https://github.com/kazimorwan498">Kazi Morwan</a>
+        </footer>
+
+        <script
+            src="https://kit.fontawesome.com/a94f7bd7b2.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
