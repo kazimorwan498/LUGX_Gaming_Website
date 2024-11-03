@@ -702,6 +702,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-14{
+  margin-top: 3.5rem;
+}
+
 .mt-16{
   margin-top: 4rem;
 }
@@ -716,14 +720,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
-}
-
-.mt-14{
-  margin-top: 3.5rem;
 }
 
 .block{
@@ -748,10 +744,6 @@ video {
 
 .h-12{
   height: 3rem;
-}
-
-.h-14{
-  height: 3.5rem;
 }
 
 .h-28{
@@ -853,6 +845,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-14{
+  gap: 3.5rem;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -867,14 +863,6 @@ video {
 
 .gap-6{
   gap: 1.5rem;
-}
-
-.gap-1{
-  gap: 0.25rem;
-}
-
-.gap-14{
-  gap: 3.5rem;
 }
 
 .gap-x-6{
@@ -1142,6 +1130,10 @@ video {
   color: rgb(30 30 30 / 0.3);
 }
 
+.text-black\/50{
+  color: rgb(30 30 30 / 0.5);
+}
+
 .text-black\/60{
   color: rgb(30 30 30 / 0.6);
 }
@@ -1163,14 +1155,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-black\/40{
-  color: rgb(30 30 30 / 0.4);
-}
-
-.text-black\/50{
-  color: rgb(30 30 30 / 0.5);
 }
 
 .caret-primary{
@@ -1582,6 +1566,10 @@ footer {
     width: 75%;
   }
 
+  .lg\:w-2\/4{
+    width: 50%;
+  }
+
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1626,5 +1614,9 @@ footer {
 
   .xl\:p-14{
     padding: 3.5rem;
+  }
+
+  .xl\:p-10{
+    padding: 2.5rem;
   }
 }
