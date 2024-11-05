@@ -2,7 +2,9 @@
 
 ## Live Demo
 
-### [Visit us ➡️ LUGX Gaming Website](https://kazimorwan498.github.io/LUGX_Gaming_Website/)
+<!-- ### [Visit us ➡️ LUGX Gaming Website](https://kazimorwan498.github.io/LUGX_Gaming_Website/) -->
+
+### [Visit us on Netlify ➡️ LUGX Gaming Website](https://lugx-gaming-website-kazimorwan498.netlify.app//)
 
 ## 💫 About Me
 
