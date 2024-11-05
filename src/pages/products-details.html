@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Kazi Morwan" />
+        <title>LUGX - Gaming</title>
+        <link
+            rel="shortcut icon"
+            href="../img/favicon-light.ico"
+            type="image/x-icon"
+            media="(prefers-color-scheme: dark)"
+        />
+        <link
+            rel="shortcut icon"
+            href="../img/favicon-dark.ico"
+            type="image/x-icon"
+            media="(prefers-color-scheme: light)"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../main.css" />
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header
+            class="flex justify-between items-center bg-primary px-10 py-5 rounded-bottom-50px w-full fixed top-0 start-0 shadow-lg z-10"
+        >
+            <img class="h-12 sm:h-14" src="../img/logo.png" alt="logo" />
+
+            <ul class="hidden lg:flex items-center gap-6 text-white">
+                <li
+                    class="rounded-full tracking-wide transition-all duration-300 cursor-pointer hover:bg-white/15"
+                >
+                    <a class="block px-5 py-2" href="../../index.html">Home</a>
+                </li>
+                <li
+                    class="rounded-full tracking-wide transition-all duration-300 cursor-pointer hover:bg-white/15"
+                >
+                    <a class="block px-5 py-2" href="./shop.html">Our Shop</a>
+                </li>
+                <li
+                    class="rounded-full tracking-wide bg-white/15 cursor-pointer"
+                >
+                    <a class="block px-5 py-2" href="#">Product Details</a>
+                </li>
+                <li
+                    class="rounded-full tracking-wide transition-all duration-300 cursor-pointer hover:bg-white/15"
+                >
+                    <a class="block px-5 py-2" href="#">Contact Us</a>
+                </li>
+            </ul>
+
+            <button
+                class="text-white text-sm sm:text-base uppercase font-medium tracking-wide bg-secondary hover:bg-primary px-5 py-2 rounded-full border-2 border-secondary transition-all duration-200 hover:border-white active:scale-95"
+                onclick="window.location.href = './login.html'"
+            >
+                Sign in
+            </button>
+        </header>
+
+        <!-- Shop Section -->
+        <section
+            class="page-heading-bg flex flex-col gap-6 items-center justify-center pt-32 sm:pt-56 pb-32 px-10 sm:px-20 rounded-bottom-150px"
+        >
+            <h2 class="text-3xl sm:text-5xl font-bold text-white uppercase">
+                Modern Warfare® II
+            </h2>
+
+            <div class="text-white">
+                <a href="../../index.html">Home</a>
+                &gt;
+                <a href="./shop.html">Shop</a>
+                &gt;
+                <span> Assassin Creed</span>
+            </div>
+        </section>
+
+        <!-- Products Details -->
+        <section
+            class="flex flex-col lg:flex-row items-center justify-center gap-20 px-10 sm:px-20 py-20 mt-10 mb-0 sm:mb-10 mx-auto"
+        >
+            <div class="lg:w-2/4 xl:p-10">
+                <img
+                    class="h-full rounded-3xl mx-auto"
+                    src="../img/single-game.jpg"
+                    alt="single-game"
+                />
+            </div>
+
+            <div class="lg:w-2/4">
+                <h3 class="text-3xl font-bold text-black mb-7">
+                    Call of Duty®: Modern Warfare® II
+                </h3>
+                <div class="text-3xl font-bold text-primary">
+                    <del class="text-lg text-black/30">$28</del>
+                    &nbsp; $22
+                </div>
+
+                <p class="text-black/70 mt-10">
+                    LUGX Gaming Template is based on the latest Bootstrap 5 CSS
+                    framework. This template is provided by TemplateMo and it is
+                    suitable for your gaming shop e-commerce websites. Feel free
+                    to use this for any purpose. Thank you.
+                </p>
+
+                <form
+                    class="flex items-center gap-5 h-12 mt-10"
+                    action="./login.html"
+                >
+                    <input
+                        class="w-24 h-full rounded-full bg-lightGray text-black text-center text-xl focus:text-primary font-bold px-5 caret-transparent outline-none border-2 border-black focus:border-primary transition-all duration-200"
+                        id="numberInput"
+                        type="number"
+                        placeholder="1"
+                        value="1"
+                        min="1"
+                        max="100"
+                    />
+
+                    <button
+                        class="text-white text-sm sm:text-base uppercase font-medium tracking-wide bg-secondary hover:bg-primary px-5 py-2 h-full rounded-full border-2 border-secondary transition-all duration-200 hover:border-primary active:scale-95"
+                        type="submit"
+                    >
+                        <i class="fa-solid fa-cart-shopping mr-2"></i>
+                        ADD TO CART
+                    </button>
+                </form>
+
+                <div class="flex items-center gap-14 mt-14 tracking-wide">
+                    <div class="flex flex-col gap-5 text-sm text-black/50">
+                        <span>Game ID:</span>
+                        <span>Genre:</span>
+                        <span>Multi-tags:</span>
+                    </div>
+
+                    <div class="flex flex-col gap-5 text-sm text-primary">
+                        <span>COD MMII</span>
+                        <span>Action, Team, Single</span>
+                        <span>War, Battle, Royal</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer
+            class="w-full py-10 sm:py-14 px-5 text-xs sm:text-base text-center text-white rounded-top-150px"
+        >
+            <span>
+                Copyright © 2024 LUGX Gaming Company. All rights reserved.
+                &nbsp;
+            </span>
+            <a href="https://github.com/kazimorwan498">Kazi Morwan</a>
+        </footer>
+
+        <script>
+            const numberInput = document.getElementById("numberInput");
+
+            numberInput.addEventListener("input", function () {
+                const value = parseInt(numberInput.value);
+
+                if (value < 1) {
+                    numberInput.value = 1;
+                } else if (value > 100) {
+                    numberInput.value = 100;
+                }
+            });
+        </script>
+    </body>
+</html>

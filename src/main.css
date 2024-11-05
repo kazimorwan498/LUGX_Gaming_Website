@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary: rgb(0, 113, 248);
+    --secondary: rgb(238, 98, 107);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+.home {
+    background: url(./img/banner-bg.jpg) center/cover;
+}
+
+.page-heading-bg {
+    background: url(./img/page-heading-bg.jpg) center/cover;
+}
+
+.rounded-bottom-50px {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.rounded-bottom-150px {
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+.rounded-top-150px {
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+}
+
+.w-100px {
+    width: 100px;
+}
+
+.h-100px {
+    height: 100px;
+}
+
+.heading-1::after {
+    content: "";
+    position: absolute;
+    left: 36%;
+    bottom: -12px;
+    transform: translateX(-50%);
+    background: url(./img/caption-dec.png);
+    height: 12px;
+    width: 203px;
+}
+
+.feature > a:hover > div {
+    background-color: var(--secondary);
+}
+
+a:hover .creed {
+    color: var(--primary);
+}
+
+a:hover .creed-icon {
+    background-color: var(--primary);
+}
+
+.leading-snug-important {
+    line-height: 1.375 !important;
+}
+
+footer {
+    background: url(./img/footer-bg.jpg) center/cover;
+}
+
+@media screen and (max-width: 767px) {
+    .rounded-bottom-150px {
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+    }
+
+    .rounded-top-150px {
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .rounded-bottom-150px {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    .rounded-top-150px {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+}
