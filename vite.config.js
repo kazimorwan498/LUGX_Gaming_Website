@@ -2,6 +2,7 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+    base: "/LUGX_Gaming_Website/",
     build: {
         rollupOptions: {
             input: {
